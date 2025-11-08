@@ -3,136 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | [Tu Nombre] - Química, Blockchain y Música</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-        header {
-            text-align: center;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #007bff;
-        }
-        header h1 {
-            color: #007bff;
-            margin-bottom: 5px;
-        }
-        .tagline {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 20px;
-        }
-        section {
-            padding: 30px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        h2 {
-            color: #28a745; /* Un color para secciones */
-            border-left: 5px solid #007bff;
-            padding-left: 10px;
-        }
-        .profile-section {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-        .pillar {
-            flex: 1;
-            padding: 15px;
-            border-radius: 6px;
-            background-color: #e9ecef;
-        }
-        .pillar h3 {
-            color: #007bff;
-            margin-top: 0;
-        }
-    </style>
+    <title>Login Ejemplo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="container">
-
-        <header>
-            <h1>[Tu Nombre]</h1>
-            <p class="tagline">Del protocolo farmacéutico al Smart Contract DeFi: La Innovación estructurada tiene un ritmo Regional.</p>
-        </header>
-
-        <section id="sobre-mi">
-            <h2>✨ Mente Híbrida: Lógica, Código y Ritmo</h2>
-            <p>
-                Soy <strong>[Tu Nombre]</strong>, un Ingeniero Químico que aplica la <strong>precisión de la Farmacéutica</strong> y la <strong>lógica del código</strong> para construir sistemas más eficientes y transparentes. Mi mente opera en la intersección de tres mundos: la <strong>rigurosidad científica</strong>, la <strong>libertad descentralizada</strong> y la <strong>creatividad musical</strong>. Aquí combino el rigor por la calidad, la innovación en <strong>DeFi</strong> y la versatilidad de un 'Todero' para resolver desafíos complejos.
-            </p>
-        </section>
-
-        <section id="pilares">
-            <h2>🧭 Mis Pilares de Experiencia</h2>
-
-            <div class="profile-section">
-
-                <div class="pillar">
-                    <h3>🧪 Ingeniería Química y Farmacéutica</h3>
-                    <p>
-                        Mi enfoque es impulsar la <strong>creatividad</strong> y la <strong>innovación</strong> a través de la <strong>lógica</strong> para optimizar procesos dentro de la industria Farmacéutica. La precisión es mi protocolo.
-                    </p>
-                    <ul>
-                        <li>Especialización en: [Menciona un área, ej: Control de Calidad, Procesos GMP]</li>
-                        <li>Valores clave: Lógica, Innovación, Creatividad.</li>
-                    </ul>
-                </div>
-
-                <div class="pillar">
-                    <h3>🔗 Blockchain y DeFi</h3>
-                    <p>
-                        He llevado esta mentalidad de optimización al mundo *Blockchain*, especializándome en la arquitectura de <strong>DeFi</strong> (Finanzas Descentralizadas) y el desarrollo de <strong>Solidity</strong>.
-                    </p>
-                    <ul>
-                        <li>Ecosistemas: AVAX (Avalanche), Solana.</li>
-                        <li>Habilidades: Solidity, Smart Contracts, DApps.</li>
-                    </ul>
-                </div>
-
-                <div class="pillar">
-                    <h3>🎶 Música Regional y Versatilidad</h3>
-                    <p>
-                        Como contrapunto, soy el 'Todero' de mi banda de <strong>Música Regional Mexicana y Colombiana</strong>. Esta faceta me enseña la <strong>versatilidad</strong> y la importancia de la armonía y el ritmo en la colaboración.
-                    </p>
-                    <ul>
-                        <li>Rol: Todero (Multifuncional).</li>
-                        <li>Géneros: Regional Mexicana, Colombiana.</li>
-                    </ul>
-                </div>
-
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" required>
             </div>
-        </section>
-
-        <section id="proyectos">
-            <h2>🛠️ Proyectos Destacados</h2>
-            <p>Aquí listaría mis trabajos más relevantes en Farmacéutica, mis Contratos Inteligentes en AVAX/Solana y mi discografía.</p>
-        </section>
-
-        <section id="contacto">
-            <h2>📧 Contacto</h2>
-            <p>¿Hablemos de optimización, descentralización o armonía? Contáctame en:</p>
-            <p>
-                Email: [tu.email@ejemplo.com] | LinkedIn: [tu-linkedin] | GitHub: [tu-github]
-            </p>
-        </section>
-
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="message"></p>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
